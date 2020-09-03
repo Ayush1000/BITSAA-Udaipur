@@ -1,0 +1,18 @@
+#bits_colors_bg p {
+	float: left;
+	width: 15rem;
+	height: 0.5rem;
+}
+#bits_colors_bg {
+	position: absolute;
+	left: 16rem;
+	bottom: 0;	
+}
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  clear: both; 
+  padding:0%;
+  }
+
