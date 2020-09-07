@@ -1,0 +1,121 @@
+@CHARSET "ISO-8859-1";
+
+      <style type="text/css">
+        #menu_extension #college_text {
+	font-family: inherit;
+	font-style: normal;
+	color: #363636;
+	text-align: right;
+	right: 9rem;
+}
+#menu_extension #college_text p {
+	font-size: 1.1rem;
+}
+#menu_extension #college_text p:first-child {
+	font-size: 1.6rem;
+}
+#menu_extension .content_wrapper {
+	position: relative;
+	padding-left: 17rem;
+}
+@media only screen and (min-width: 64.1em) {
+	#menu .top-bar .name {
+		background: #b51100;
+		padding: 1rem;
+		width: 16rem;
+	}
+}
+@media only screen and (max-width: 64.1em) {
+	#menu .top-bar .name {
+		width: 6.3rem;
+	}
+}
+#menu div.submenu a {
+	font-size: 1.2rem;
+}
+#menu .top-bar-section ul li.menu_item {
+	position: static;
+}
+#menu div.submenu {
+	width: 100%;
+}
+#menu div.submenu a {
+	white-space: normal;
+}
+#home_page #home_login {
+	background: #fff;
+	color: #363636;
+}
+#home_page #home_login a {
+	color: #363636;
+}
+#home_page #home_login #home_new_features div.new_feature p {
+	color: #363636;
+}
+#home_page #home_login #home_new_features div.new_feature svg * {
+	fill: #b51100;
+}
+#home_page #home_login #home_login_update_profile {
+	background: rgba(10,10,10, 0.5);
+	color: #fff;
+}
+#bits_colors_bg {
+	position: absolute;
+	left: 16rem;
+	bottom: 0;	
+}
+#bits_colors_bg p {
+	float: left;
+	width: 15rem;
+	height: 0.5rem;
+}
+#home_page #home_stories, #home_page #home_needs {
+	display: none;
+}
+#feedback_trigger {
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.6);
+	-webkit-border-radius: 0;
+            border-radius: 0;
+	padding: 0.5rem 2rem;
+}
+#feedback_modal p.title {
+	margin-bottom: 1.4rem;
+}
+#feedback_modal p.subtitle {
+	margin: 0.7rem 0;
+}
+#feedback_modal #feedback_rating {
+	margin-top: 1.4rem;
+}
+
+#cms_page #cms_page_block ul {
+margin-left: 1rem;
+}
+#project_page .profile_snippet .profile_details_container p.profile_extra, #project_page .profile_snippet .profile_details_container p.profile_extra *{
+display: none;
+}
+
+@media only screen and (max-width: 64.1em) {
+#bitsaa-voluenteer-form {
+    width: 100%;
+    height: 1600px;
+}
+}
+.button {
+  background-color: #FF0000 !important; /* red */
+ 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 10px 0px 120px;
+  cursor: pointer;
+}
+      </style>
+    
+  
