@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>profile</title>
 <meta name="description" content="">
-<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <script src="Js/Edit.js"></script>
+<!--  
 <style>
 #inner-page {
 margin:0px;
@@ -34,6 +35,7 @@ font-family:Verdana;
 font-size:14px;
 }
 </style>
+-->
 </head>
 
 <%
@@ -46,8 +48,9 @@ ProfileReadBean user = alumniList.viewProfile(userid);
 %>
 
 
-
+<jsp:include page="header1.jsp" /> 
 <body>
+<!--  
 <header id="header">
   <nav class="navbar navbar-inverse" role="banner">
     <div class="container">
@@ -72,6 +75,8 @@ ProfileReadBean user = alumniList.viewProfile(userid);
     </div>
   </nav>
 </header>
+-->
+<div class="container">
 <div id="inner-page">
 
         <div>
@@ -152,7 +157,7 @@ function isNumber(evt)
 <td></label><input type="text" name="address" id="address" value="<%=user.getAddress() %>" size="40" required></td>
 </tr>
 <tr>
-<td colspan="4"><label><b><u><font size="4px"></font>Work Information:</font></u></b></label></td>
+<td colspan="4"><label><b><font size="4px"><font>Work Information:</font></b></label></td>
 <td></td><td></td>
 </tr>
 <tr>
@@ -178,7 +183,7 @@ function isNumber(evt)
 </div>
 </center>
 </form>
-     
+     </div>
 </div>
    <footer class="footer">
       <div class="container">
@@ -188,4 +193,5 @@ function isNumber(evt)
 <script type="text/javascript" src="js/jquery.js"></script> 
 <script type="text/javascript" src="js/bootstrap.min.js"></script> 
 </body>
+<jsp:include page="footer.jsp" /> 
 </html>	

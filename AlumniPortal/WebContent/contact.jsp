@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>contact</title>
 <meta name="description" content="">
-<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <style>
 #inner-page {
 margin:0px;
@@ -72,7 +72,9 @@ function searchTable(inputVal)
 }
 </script>
 </head>
+<jsp:include page="header1.jsp" />
 <body>
+<!--  
 <header id="header">
   <nav class="navbar navbar-inverse" role="banner">
     <div class="container">
@@ -97,6 +99,8 @@ function searchTable(inputVal)
     </div>
   </nav>
 </header>
+-->
+<br><br><br>
   <div><h2 align="center"><font face="Verdana" color="3300CC">ALUMNI LIST</font></h2></div>
 		   <div class="container">
             <p>&nbsp;</p><div class="col-lg-6 col-lg-offset-6">
@@ -123,7 +127,7 @@ function searchTable(inputVal)
             }
         String url ="jdbc:mysql://localhost/alumni"; 
             Connection con = DriverManager.getConnection(
-                url, "root", "root");
+                url, "root", "Rishika31");
            String search=request.getParameter("search");
             Statement st= con.createStatement() ;
             String qry="SELECT user.userid,user.firstname,user.lastname,user.email,profile.branch,profile.batch,profile.companyname from user inner join profile on user.userid=profile.userid";
@@ -157,12 +161,15 @@ function searchTable(inputVal)
             </table>
             <hr>
 	</div>
+	<!--  
 <footer class="footer">
       <div class="container">
         <p><font color="white"><center>Designed By &copy; 2015 A Different View</center></font></p>
       </div>
     </footer>
+    -->
 <script type="text/javascript" src="js/jquery.js"></script> 
 <script type="text/javascript" src="js/bootstrap.min.js"></script> 
 </body>
+<jsp:include page="footer.jsp" />
 </html>	

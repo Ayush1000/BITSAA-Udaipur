@@ -6,27 +6,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>project</title>
 <meta name="description" content="">
-<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- <link href="css/bootstrap.min.css" rel="stylesheet">
+ -->
 <style>
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 50px;
-  background-color: #222;
+#img{
+height:50%;
+width:100%;
 }
-.footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-body{
-font-family:Verdana;
-font-size:14px;
-}
+
 </style>
+
 </head>
+<jsp:include page="header1.jsp" /> 
 <body>
+
+<!--  
 <header id="header">
   <nav class="navbar navbar-inverse" role="banner">
     <div class="container">
@@ -50,19 +46,26 @@ font-size:14px;
     </div>
   </nav>
 </header>
+-->
+ 
 <div id="main-slide">
-    <div class="item"> <img class="img-responsive" src="images/slider/alumni.jpg">
+    <div class="item"> <img class="img-responsive" src="images/slider/alumni.jpg" id="img">
       <div class="slider-content">
       </div>
     </div>
   </div>
+
+  <!--  
 <footer class="footer">
       <div class="container">
         <p><font color="white"><center>Designed By &copy; 2015 A Different View</center></font></p>
       </div>
     </footer>
+    -->
 <script type="text/javascript" src="js/jquery.js"></script> 
 <script type="text/javascript" src="js/bootstrap.min.js"></script> 
 
 </body>
+  <jsp:include page="footer.jsp" />
+ 
 </html>

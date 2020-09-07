@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>profile</title>
 <meta name="description" content="">
-<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
 #inner-page {
@@ -17,18 +17,7 @@ margin:0px;
 margin-left:300px;
 margin-right:200px;
 }
-.footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 50px;
-  background-color: #222;
-}
-.footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
-}
+
 body{
 font-family:Verdana;
 font-size:14px;
@@ -47,8 +36,9 @@ RegistrationProfileBean user = register.insertProfile(userid);
 %>
 
 
-
+ <jsp:include page="header1.jsp" />  
 <body>
+<!-- 
 <header id="header">
   <nav class="navbar navbar-inverse" role="banner">
     <div class="container">
@@ -67,6 +57,7 @@ RegistrationProfileBean user = register.insertProfile(userid);
     </div>
   </nav>
 </header>
+ -->
 <div id="inner-page">
 
         <div>
@@ -161,12 +152,15 @@ RegistrationProfileBean user = register.insertProfile(userid);
 </form>
      
 </div>
+<!-- 
    <footer class="footer">
       <div class="container">
         <p><font color="white"><center>Designed By &copy; 2015 A Different View</center></font></p>
       </div>
     </footer>
+     -->
 <script type="text/javascript" src="js/jquery.js"></script> 
 <script type="text/javascript" src="js/bootstrap.min.js"></script> 
 </body>
+ <jsp:include page="footer.jsp" />  
 </html>	

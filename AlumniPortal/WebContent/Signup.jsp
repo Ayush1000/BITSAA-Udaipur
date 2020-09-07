@@ -5,24 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>log in</title>
 <meta name="description" content="">
-<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <script src="Js/Signup.js"></script>
+
 <style>
 body{
 font-family:Verdana;
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 50px;
-  background-color: #222;
-}
-.footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
-}
+
 #login {
     padding-top: 50px
 }
@@ -42,8 +32,11 @@ font-family:Verdana;
     margin: 0 auto;
 }
 </style>
+
 </head>
+<jsp:include page="header.jsp" />
 <body>
+<!-- 
 <header id="header">
   <nav class="navbar navbar-inverse" role="banner">
     <div class="container">
@@ -62,6 +55,7 @@ font-family:Verdana;
     </div>
   </nav>
 </header>
+ -->
 <section id="login">
     	<div class="row">
 		<div class="form-wrap">
@@ -111,7 +105,7 @@ var iKeyCode = (evt.which) ? evt.which : evt.keyCode
 	  <b>Gender:</b>
 			<b>Male</b><input name="gender" type="radio" style="width: 60px;height: 20px;" value="Male" checked="checked">
 		  <b>Female</b><input name="gender" type="radio" style="width: 60px;height: 20px;" value="Female">
-									
+									<br><br>
 										<div class="form-group">
 											 <button type="submit" class="btn btn-primary btn-block" >Sign Up</button>
 										</div>
@@ -122,13 +116,16 @@ var iKeyCode = (evt.which) ? evt.which : evt.keyCode
 				</div>
   
    </section> 
+   <!--  
 	<footer class="footer">
       <div class="container">
         <p><font color="white"><center>Designed By &copy; 2015 A Different View</center></font></p>
       </div>
     </footer>
+    -->
 <script type="text/javascript" src="js/jquery.js"></script> 
 <script type="text/javascript" src="js/bootstrap.min.js"></script> 
 
 </body>
+<jsp:include page="footer.jsp" />
 </html>

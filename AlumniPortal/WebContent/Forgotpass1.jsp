@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FORGOT PASSWORD</title>
 <meta name="description" content="">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!--  
 <style>
 #inner-page {
 margin:0px;
@@ -32,8 +32,11 @@ font-family:Verdana;
 font-size:14px;
 }
 </style>
+-->
 </head>
+ <jsp:include page="header.jsp" />  
 <body>
+<!--  
 <header id="header">
   <nav class="navbar navbar-inverse" role="banner">
     <div class="container">
@@ -53,6 +56,7 @@ font-size:14px;
     </div>
   </nav>
 </header>
+-->
 <body>
 <div id="inner-page">
   <div class="jumbotron">
@@ -74,13 +78,16 @@ font-size:14px;
 </form>
   </div>
   </div>
+  <!--  
 <footer class="footer">
       <div class="container">
         <p><font color="white"><center>Designed By &copy; 2015 A Different View</center></font></p>
       </div>
     </footer>
+    -->
 <script type="text/javascript" src="js/jquery.js"></script> 
 <script type="text/javascript" src="js/bootstrap.min.js"></script> 
 
 </body>
+ <jsp:include page="footer.jsp" />  
 </html>
