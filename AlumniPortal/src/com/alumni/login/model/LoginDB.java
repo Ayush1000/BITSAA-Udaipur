@@ -19,7 +19,7 @@ import java.sql.*;
 			         
 			         try
 			         {               
-			        	 con = DriverManager.getConnection(url,"root","tiger");
+			        	 con = DriverManager.getConnection(url,"root","Rishika31");
 				           System.out.println("CONNECTED");
 				           st = con.createStatement();
 				           String qry="select * from user where email='" + user.getEmail() + "' and password= '" + user.getPassword()+ "'";

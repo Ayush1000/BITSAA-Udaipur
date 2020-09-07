@@ -47,8 +47,9 @@ ProfileReadBean user = alumniList.viewProfile(uid);
 %>
 
 
-
+ <jsp:include page="header1.jsp" /> 
 <body>
+<!--  
 <header id="header">
   <nav class="navbar navbar-inverse" role="banner">
     <div class="container">
@@ -73,6 +74,8 @@ ProfileReadBean user = alumniList.viewProfile(uid);
     </div>
   </nav>
 </header>
+-->
+<div class="container">
 <div id="inner-page">
 
         <div>
@@ -154,15 +157,20 @@ ProfileReadBean user = alumniList.viewProfile(uid);
 </tr>
 </table>
 </div>
+
 </center>
      
 </div>
+</div>
+<!-- 
    <footer class="footer">
       <div class="container">
         <p><font color="white"><center>Designed By &copy; 2015 A Different View</center></font></p>
       </div>
     </footer>
+     -->
 <script type="text/javascript" src="js/jquery.js"></script> 
 <script type="text/javascript" src="js/bootstrap.min.js"></script> 
 </body>
+ <jsp:include page="footer.jsp" /> 
 </html>	

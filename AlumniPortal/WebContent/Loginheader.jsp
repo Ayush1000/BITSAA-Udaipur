@@ -14,6 +14,7 @@
 </head>
 <body>
 <!-- Navigation -->
+<div class="footer">
 <div class="menu">
 	
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
@@ -30,7 +31,20 @@
         </div>
      
     <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        
    
+       
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.jsp">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href=#>Contact_us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href=#>Blog</a>
+        </li>
+      </ul>
        <div id="bits_colors_bg" class="clearfix">
 			<p style="background-color:#ffce2b;"></p>
 			<p style="background-color:#6cbfe7;"></p>
@@ -38,6 +52,7 @@
 		</div>
     </div>
     </nav>
+    </div>
     </div>
 
 

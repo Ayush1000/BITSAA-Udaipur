@@ -32,7 +32,7 @@ public class ProfileRadDB {
 	         
 	         try
 	         {               
-	            con = DriverManager.getConnection(url,"root","tiger");
+	            con = DriverManager.getConnection(url,"root","Rishika31");
 	            System.out.println("CONNECTED");
 	           st = con.createStatement();
 	           String qry="SELECT user.firstname,user.lastname,profile.school,profile.college,profile.university,profile.batch,profile.branch,user.email,user.phonenumber,user.gender,profile.address,profile.companyname,profile.companylocation,profile.position,profile.about,profile.image from user inner join profile on user.userid=profile.userid where user.userid="+userid;
