@@ -17,7 +17,8 @@ public class SendEmail
      {  
           final String from = "gauravoffical21@gmail.com"; // change accordingly
           final String password = "Ranu31@dec"; // change accordingly
-//          String to = "gj21041998@gmail.com"; // change accordingly
+        // String to = "gj21041998@gmail.com"; // change accordingly
+         
 //          String host = "localhost"; // or IP address
 
           // Get system properties

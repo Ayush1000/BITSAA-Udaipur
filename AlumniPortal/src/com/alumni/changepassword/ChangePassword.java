@@ -30,7 +30,7 @@ public class ChangePassword extends HttpServlet {
 
 	        String user = "root";
 
-	        String pass = "tiger";
+	        String pass = "Ranu31@dec";
 
 	        HttpSession session=request.getSession();
 

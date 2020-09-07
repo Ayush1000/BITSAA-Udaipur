@@ -24,7 +24,7 @@ import javax.sql.*;
 	         
 	         try
 	         {               
-	            con = DriverManager.getConnection(url,"root","tiger");
+	            con = DriverManager.getConnection(url,"root","Ranu31@dec");
 	            System.out.println("CONNECTED");
 	           st = con.createStatement();
 	           String qry="INSERT INTO user (firstname,lastname,email,phonenumber,password,gender) VALUES ('" +user.getFirstname()+ "','" + user.getLastname() + "','" + user.getEmail()+ "','" + user.getPhonenumber() + "','" + user.getPassword()+"','" + user.getGender()+ "')";
@@ -58,7 +58,7 @@ import javax.sql.*;
 		         
 		         try
 		         {               
-		            con = DriverManager.getConnection(url,"root","tiger");
+		            con = DriverManager.getConnection(url,"root","Ranu31@dec");
 		            System.out.println("CONNECTED");
 		           st = con.createStatement();
 		           String qry="select userid from user where email='"+email+"'";

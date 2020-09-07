@@ -26,7 +26,7 @@ public class RegistrationProfileDB {
 	         
 	         try
 	         {               
-	            con = DriverManager.getConnection(url,"root","tiger");
+	            con = DriverManager.getConnection(url,"root","Ranu31@dec");
 	            System.out.println("CONNECTED");
 	           st = con.createStatement();
 	           String qry="SELECT * from user where userid="+userid;
@@ -77,7 +77,7 @@ public class RegistrationProfileDB {
 	         
 	         try
 	         {               
-	            con = DriverManager.getConnection(url,"root","tiger");
+	            con = DriverManager.getConnection(url,"root","Ranu31@dec");
 	            System.out.println("CONNECTED");
 	           st = con.createStatement();
 	           //String  qry="INSERT INTO profile (userid,school,college,university,uploadphoto,batch,branch,address,companyname,companylocation,position,about) VALUES ("+userid+",'"+user.getSchool()+"','"+user.getCollege()+"','"+user.getUniversity()+"','"+user.getUploadphoto()+"',"+user.getBatch()+",'"+user.getBranch()+"','"+user.getAddress()+"','"+user.getCompanyname()+"','"+user.getCompanylocation()+"','"+user.getPosition()+"','"+user.getAbout()+"')";

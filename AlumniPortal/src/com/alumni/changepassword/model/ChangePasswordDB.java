@@ -21,7 +21,7 @@ public class ChangePasswordDB {
 		         
 		         try
 		         {               
-		            con = DriverManager.getConnection(url,"root","tiger"); 
+		            con = DriverManager.getConnection(url,"root","Ranu31@dec"); 
 		            st.executeQuery("select * from user where password='"+user.getCurrentPassword()+"'");
 		            String currentPassword = null;
 		            String newPassword=null;

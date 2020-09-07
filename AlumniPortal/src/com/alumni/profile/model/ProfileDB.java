@@ -20,7 +20,7 @@ public class ProfileDB
          
          try
          {               
-            con = DriverManager.getConnection(url,"root","tiger");
+            con = DriverManager.getConnection(url,"root","Ranu31@dec");
             System.out.println("CONNECTED");
            st = con.createStatement();
            String qry="update profile set school='"+user.getSchool()+"', college='"+user.getCollege()+"', university='"+user.getUniversity()+"',batch='"+user.getBatch()+"',branch='"+user.getBranch()+"',uploadphoto='"+user.getphoto()+"',address='"+user.getAddress()+"',companyname='"+user.getCompanyname()+"',companylocation='"+user.getCompanylocation()+"',position='"+user.getPosition()+"',about='"+user.getAbout()+"' where userid='"+userid+"'"; 

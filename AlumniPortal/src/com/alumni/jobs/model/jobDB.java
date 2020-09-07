@@ -23,7 +23,7 @@ public class jobDB {
         System.out.println("CONNECTED");
         
         Statement st=  con.createStatement();
-        String qry="insert into job"+" values('"+job.getName()+"','" +job.getCompanyName()+"','" +job.getDesignation()+"','" +job.getDiscription()+"','" +job.getCity()+"','" +job.getState()+"','" +job.getEmail()+"','" +job.getPhoneNumber()+"','" +job.getDate()+ "')";
+        String qry="insert into job (name,companyname,designation,discription,city,state,total_expirence,relative_expirence,skill,email,phonenumber,start_date,last_date)"+" values('"+job.getName()+"','" +job.getCompanyName()+"','" +job.getDesignation()+"','" +job.getDiscription()+"','" +job.getCity()+"','" +job.getState()+"','" +job.getTotal_expirence()+"','" +job.getRelative_expirence()+"','"+job.getSkill()+"','"+job.getEmail()+"','" +job.getPhoneNumber()+"','"+job.getStart_date()+"','" +job.getDate()+ "')";
         System.out.println(qry);
         
         
