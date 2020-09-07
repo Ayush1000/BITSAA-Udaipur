@@ -33,7 +33,7 @@ public class ForgotPassword3 extends HttpServlet {
 
 	        String user = "root";
 
-	        String pass = "Rishika31";
+	        String pass = "Ranu31@dec";
 
 	        HttpSession session = request.getSession(true);
 	 	   String email=(String)session.getAttribute("email"); 

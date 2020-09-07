@@ -45,7 +45,7 @@
           <a class="nav-link" href="profile.jsp">profile</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="jobs.jsp">Jobs</a>
+          <a class="nav-link" href="viewJobs.jsp">Jobs</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="Login.jsp">Logout</a>

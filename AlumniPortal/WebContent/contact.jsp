@@ -127,7 +127,7 @@ function searchTable(inputVal)
             }
         String url ="jdbc:mysql://localhost/alumni"; 
             Connection con = DriverManager.getConnection(
-                url, "root", "Rishika31");
+                url, "root", "Ranu31@dec");
            String search=request.getParameter("search");
             Statement st= con.createStatement() ;
             String qry="SELECT user.userid,user.firstname,user.lastname,user.email,profile.branch,profile.batch,profile.companyname from user inner join profile on user.userid=profile.userid";

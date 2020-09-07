@@ -37,6 +37,10 @@ public class jobServlet extends HttpServlet {
 		String email =request.getParameter("email");
 		String phonenumber =request.getParameter("phonenumber");
 		String date =request.getParameter("lastdate");
+		String start_date=request.getParameter("start_date");
+		String skill=request.getParameter("skill");
+		String total_expirence=request.getParameter("total_expirence");
+		String relative_expirence =request.getParameter("relative_expirence ");
 		
 		
 		
@@ -51,6 +55,10 @@ public class jobServlet extends HttpServlet {
 		job.setState(state);
 		job.setPhoneNumber(phonenumber);
 		job.setDate(date);
+		job.setRelative_expirence(relative_expirence);
+		job.setTotal_expirence(total_expirence);
+		job.setSkill(skill);
+		job.setStart_date(start_date);
 		
 		
 		
@@ -60,7 +68,7 @@ public class jobServlet extends HttpServlet {
 			int i=jobDB.add(job);
 			if(i==1){
 				System.out.println("success");
-				response.sendRedirect("index.html");
+				response.sendRedirect("jobs.html");
 			}
 			else{
 				System.out.println("error");

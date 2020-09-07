@@ -40,7 +40,7 @@ public class ImageServlet extends HttpServlet
 	         
 	         try
 	         {               
-	            con = DriverManager.getConnection(url,"root","Rishika31");
+	            con = DriverManager.getConnection(url,"root","Ranu31@dec");
 	            System.out.println("CONNECTED");
 	            PreparedStatement ps = con.prepareStatement("select image from profile where userid = ?");
 	            ps.setInt(1,userid);
