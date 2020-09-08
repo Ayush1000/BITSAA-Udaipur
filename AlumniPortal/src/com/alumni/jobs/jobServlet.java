@@ -68,7 +68,7 @@ public class jobServlet extends HttpServlet {
 			int i=jobDB.add(job);
 			if(i==1){
 				System.out.println("success");
-				response.sendRedirect("jobs.html");
+				response.sendRedirect("jobs.jsp");
 			}
 			else{
 				System.out.println("error");

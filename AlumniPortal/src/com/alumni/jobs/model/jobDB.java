@@ -1,8 +1,5 @@
 package com.alumni.jobs.model;
 
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.sql.*;
 
 
@@ -33,6 +30,29 @@ public class jobDB {
 		
 		
 		
+		
+	}
+	public static String getEmailForJobID(int jobid) throws ClassNotFoundException, SQLException{
+		
+
+		String url ="jdbc:mysql://localhost/jobs"; 
+
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        
+        Connection con = (Connection) DriverManager.getConnection(url,"root","Ranu31@dec");
+        System.out.println("CONNECTED");
+        
+        String qry="select email from job where jobID=?";
+        PreparedStatement pst=con.prepareStatement(qry);
+        pst.setInt(1,jobid);
+        ResultSet rs=pst.executeQuery();
+        String to=null;
+        if(rs.next()){
+        to=rs.getString("email");
+        }
+		
+		
+		return to;
 		
 	}
 }
