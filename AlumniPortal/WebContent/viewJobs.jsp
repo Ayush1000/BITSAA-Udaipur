@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-	<%@page import="java.sql.DriverManager"%>
+	pageEncoding="ISO-8859-1"%><%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Connection"%>
@@ -9,131 +8,139 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<!--  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet'
+        type='text/css'> -->
 <link
-	href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic'
-	rel='stylesheet' type='text/css'>
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+	rel="stylesheet">
 
 
+<link href="viewJob.css" rel="stylesheet">
 
 
-
-<link rel="stylesheet" type="text/css"
-	href="https://static.almabaseapp.com/css/foundation.2b833b7b678a.css" />
-<link rel="stylesheet" type="text/css"
-	href="https://static.almabaseapp.com/css/normalize.7caceed67722.css" />
-<link rel="stylesheet" type="text/css"
-	href="https://static.almabaseapp.com/css/index.8902e9d1857c.css" />
-
-
-
-
-
-<link rel="stylesheet" type="text/css"
-	href="https://static.almabaseapp.com/css/tools.5b65da64994d.css" />
-
-
-<link rel="stylesheet" type="text/css"
-	href="https://static.almabaseapp.com/css/themes/second/base.cbb6ef235786.css" />
-<link rel="stylesheet" type="text/css" href="viewJob.css" />
-
-
-<link rel="stylesheet"
-	href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 <title>View Job</title>
+
+
 </head>
+
+<jsp:include page="header1.jsp" />
 <body>
+	<div id="postJob">
 
-	<br>
-	<br>
-	<a href="jobs.jsp"><button>Post a job</button></a>
+		<a href="jobs.jsp"><button type="submit" id="post">Post a
+				Job</button></a>
+	</div>
+	<br></br>
+<div class="container">
+	<div class="row">
+	
+			
+	
 	<%
-		String url = "jdbc:mysql://localhost/jobs";
+			String url = "jdbc:mysql://localhost/jobs";
 
-		Class.forName("com.mysql.cj.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 
-		try {
+			try {
 
-			Connection con = DriverManager.getConnection(url, "root",
-					"Ranu31@dec");
-			System.out.println("CONNECTED");
-			Statement st = con.createStatement();
-			String qry = "select * from job ";
+				Connection con = DriverManager.getConnection(url, "root",
+						"Ranu31@dec");
+				System.out.println("CONNECTED");
+				Statement st = con.createStatement();
+				String qry = "select * from job ";
 
-			ResultSet rs = st.executeQuery(qry);
-			System.out.println(rs);
-			while (rs.next()) {
-				System.out.println(rs.getString("designation") + " "
-						+ rs.getString("city"));
-				String jobid = rs.getString("jobID");
-				System.out.println("job id : "+jobid);
-	%>
+				ResultSet rs = st.executeQuery(qry);
+				System.out.println(rs);
+				while (rs.next()) {
+					System.out.println(rs.getString("designation") + " "
+							+ rs.getString("city"));
+		%>
 
 
 
-<%-- 	<form name="viewjobs" action="apply.jsp?jobid=<%= jobid%>"> --%>
 
-		<div id="job_cards_container">
-			<div class="row">
+	
 
-				<div class="column small-12 medium-6 large-4 ">
-					<div class="job_card">
-						<div class="deadline">
-							<p class="deadline text-right">
-								<span>Apply by </span><span class="highlight"><%=rs.getString("last_date")%></span>
+
+
+
+
+
+	<div class="col-sm-12 col-md-6 col-lg-4 " id="cardspace">
+
+				
+					<div class=" card  lighten-2 text-left z-depth-2 " >
+						<div class="card-body" >
+							<div class="deadline">
+								<p class="deadline text-left">
+									<span><b>Apply by : </b></span><span class="highlight"><%=rs.getString("last_date")%></span>
+								</p>
+							</div>
+
+							<p class="title">
+								<b>Profile: </b>
+								<%=rs.getString("designation")%></p>
+							<p class="categories"><b>Skills : </b><%=rs.getString("skill")%>
 							</p>
-						</div>
-
-						<p class="title">
-							Profile
-							<%=rs.getString("designation")%></p>
-						<p class="categories">Technology</p>
 
 
-						<p class="tag">Pay not specified</p>
+							
 
-						<p class="tag">
-							Experience
-							<%=rs.getString("total_expirence")%>
-						</p>
+							<p class="tag">
+								<b>Total Experience : </b>
+								<%=rs.getString("total_expirence")%>
+							</p>
+							<p class="tag">
+								<b>Relevant Experience : </b>
+								<%=rs.getString("relative_expirence")%>
+							</p>
 
 
-						<div class="bottom">
-							<p class="company text-right">
-								<span class="highlight">Company: <%=rs.getString("companyname")%>
-								</span>, <span> <%
- 	rs.getString("city");
+							<div class="bottom">
+								<p class="company text-left">
+									<span class="highlight"><b>Company : </b> <%=rs.getString("companyname")%>
+									</span>, <span> <%
+rs.getString("city");
  %> <%
  	rs.getString("state");
  %>
-								</span>
-							</p>
-							<br />
-							<br />
+									</span>
+								</p>
+								
 
 
+							</div>
+							<center>
+							<div>
+								<a href="apply.jsp"> <input type="submit"
+									class="btn btn-md btn-danger" name="apply" value="apply"></a>
+							</div>
+							</center>
 						</div>
-						<div>
-							<a href="apply.jsp?jobid=<%= jobid %>"><input type="submit" class="button"></a>
-						</div>
-
+						
 					</div>
-
 				</div>
-				
-<!-- 	</form> -->
 
-	<%
-		}
-			con.close();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	%>
 
+
+
+				<%
+			}
+				con.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		%>
+
+			
+		</div>
+			<br>
 	</div>
-	</div>
+<br>
 
 
 
 </body>
+<jsp:include page="footer.jsp" />
 </html>
+
