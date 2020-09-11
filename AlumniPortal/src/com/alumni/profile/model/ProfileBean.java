@@ -19,7 +19,7 @@ public class ProfileBean
 	private String position;
 	private String about;
 	private String email;
-	
+
 	public String getEmail() {
 		return email;
 	}
